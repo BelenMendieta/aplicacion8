@@ -1,10 +1,10 @@
 // JavaScript Document
 
 $(document).ready(function (e){
-	document.addEventListener("deviceready",function(){
+	document.addEventListener ("deviceready",function(){
 		
 		$('#izquierda').on("swipeleft",function(){
-			navigator.notification.alert("Deslizar a la izquierda",function(){"Aplicacion8","Aceptar"});
+			navigator .notification. alert("Deslizar a la izquierda",function(){"Aplicacion8","Aceptar"});
 		});
 		$('#derecha').on("swiperight",function(){
 			navigator .notification. confirm ("¡Qué quieres hacer?",function(opt){
@@ -19,5 +19,5 @@ $(document).ready(function (e){
 				}
 			},"Aplicacion8","Beep,Vibrar,Cancelar");
 		});
-	}.false);
+	},false);
 });
